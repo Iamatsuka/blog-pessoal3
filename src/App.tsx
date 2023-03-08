@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/estaticos/navbar/Navbar';
 import Footer from './components/estaticos/footer/Footer';
@@ -11,7 +12,9 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
+        <div>
         <Route path="/" element={<Home />} />
+        </div>
       </Routes>
       <Footer />
     </Router>
