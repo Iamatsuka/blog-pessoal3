@@ -4,10 +4,13 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import {Typography, Grid } from '@material-ui/core';
 import {Box} from '@mui/material';
+import {box} from 'footerComponent';
+
 
 function Footer() {
     return (
         <>
+        <footerComponent/>
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid alignItems="center" item xs={12}>
                     <Box style={{ backgroundColor: "#3F51B5", height: "120px" }}>
@@ -29,11 +32,12 @@ function Footer() {
                     <Box style={{ backgroundColor: "#303F9F", height: "60px" }}>
                         <Box paddingTop={1}>
                             <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "white" }} >© 2020 Copyright:</Typography>
-                        </Box>
+                        </Box >
                         <Box>
                             <a target="_blank" href="https://brasil.generation.org" rel="noopener noreferrer">
                                 <Typography variant="subtitle2" gutterBottom style={{ color: "white" }} align="center">brasil.generation.org</Typography>
                             </a>
+
                         </Box>
                     </Box>
                 </Grid>
